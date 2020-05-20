@@ -7,6 +7,8 @@
 
 ## Example
 
+https://www.youtube.com/watch?v=yuIJfyQD2QI
+
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
@@ -19,6 +21,12 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'SWOTPView'
 ```
+
+## How to use?
+
+In storyboard, you need create a OTPView
+
+<img src="https://user-images.githubusercontent.com/18132015/82439753-627fd100-9ac5-11ea-89cc-8a0a7035e517.png"/>
 
 ## Author
 
