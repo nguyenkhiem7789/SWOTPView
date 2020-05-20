@@ -1,0 +1,6 @@
+framework module SWOTPView {
+  umbrella header "SWOTPView-umbrella.h"
+
+  export *
+  module * { export * }
+}
