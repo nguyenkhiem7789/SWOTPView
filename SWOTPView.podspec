@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SWOTPView'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of SWOTPView.'
+  s.version          = '0.1.1'
+  s.summary          = 'A lib create a view for OTP verify'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,12 +21,14 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/nguyenkhiem7789@gmail.com/SWOTPView'
+  s.homepage         = 'https://github.com/nguyenkhiem7789/SWOTPView'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'nguyenkhiem7789@gmail.com' => 'nguyenkhiem7789@gmail.com' }
-  s.source           = { :git => 'https://github.com/nguyenkhiem7789@gmail.com/SWOTPView.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/nguyenkhiem7789/SWOTPView.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+
+  s.swift_version = '4.0'
 
   s.ios.deployment_target = '8.0'
 

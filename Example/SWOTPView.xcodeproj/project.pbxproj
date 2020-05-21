@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1E518FA26E320A28F8DCFC0F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1E518FA26E320A28F8DCFC0F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		392B4F6CB694A0236EE58DE4 /* Pods_SWOTPView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWOTPView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DE3A5AE4C4D8DC81248066D /* Pods-SWOTPView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWOTPView_Example.debug.xcconfig"; path = "Target Support Files/Pods-SWOTPView_Example/Pods-SWOTPView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SWOTPView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWOTPView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,9 +43,9 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6F2B9E9850E9CEBF7AB78BA8 /* Pods_SWOTPView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWOTPView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B19B2B4C1042F6A2583387B1 /* Pods-SWOTPView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWOTPView_Tests.release.xcconfig"; path = "Target Support Files/Pods-SWOTPView_Tests/Pods-SWOTPView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		BFA64A0806CFDA67F092027E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		BFA64A0806CFDA67F092027E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C1577D0ED9BDA5E79AE2A015 /* Pods-SWOTPView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWOTPView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SWOTPView_Tests/Pods-SWOTPView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		DE3A8B2A591F6C8B5D788C57 /* SWOTPView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SWOTPView.podspec; path = ../SWOTPView.podspec; sourceTree = "<group>"; };
+		DE3A8B2A591F6C8B5D788C57 /* SWOTPView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SWOTPView.podspec; path = ../SWOTPView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		EDB3A35A3E72DDCC273E282F /* Pods-SWOTPView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWOTPView_Example.release.xcconfig"; path = "Target Support Files/Pods-SWOTPView_Example/Pods-SWOTPView_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,7 +147,6 @@
 				C1577D0ED9BDA5E79AE2A015 /* Pods-SWOTPView_Tests.debug.xcconfig */,
 				B19B2B4C1042F6A2583387B1 /* Pods-SWOTPView_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -214,10 +213,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 2B2RV76D73;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 2B2RV76D73;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -228,6 +229,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -438,7 +440,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -484,7 +486,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -497,6 +499,7 @@
 			baseConfigurationReference = 3DE3A5AE4C4D8DC81248066D /* Pods-SWOTPView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2B2RV76D73;
 				INFOPLIST_FILE = SWOTPView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -512,6 +515,7 @@
 			baseConfigurationReference = EDB3A35A3E72DDCC273E282F /* Pods-SWOTPView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2B2RV76D73;
 				INFOPLIST_FILE = SWOTPView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -526,6 +530,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C1577D0ED9BDA5E79AE2A015 /* Pods-SWOTPView_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 2B2RV76D73;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -548,6 +553,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B19B2B4C1042F6A2583387B1 /* Pods-SWOTPView_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 2B2RV76D73;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

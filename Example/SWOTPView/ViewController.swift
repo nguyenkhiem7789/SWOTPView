@@ -7,18 +7,27 @@
 //
 
 import UIKit
+import SWOTPView
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var otpView: OTPView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        otpView.delegate = self
     }
 
 }
 
+extension ViewController: OTPViewDelegate {
+
+    func didChangeValidity(isValid: Bool) {
+        print("XcheckOTPView => isValid = \(isValid)")
+    }
+
+    func finish() {
+        print("XcheckOTPView => finish")
+    }
+
+}

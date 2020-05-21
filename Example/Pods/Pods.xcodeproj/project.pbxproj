@@ -11,6 +11,8 @@
 		11C410135C7E89353B480AC8DE0BFB77 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */; };
 		14AD81D52FAD9CF2C065C61FB00C3B4F /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */; };
 		14C511527597E5846AB2627F791C7D8E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716A9972B9D9103B54DB950893FAF104 /* QuartzCore.framework */; };
+		1825DA59247528D3007B1991 /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1825DA57247528D0007B1991 /* OTPView.swift */; };
+		187C61E42474DC4000827E7D /* OTPTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187C61E22474DAA200827E7D /* OTPTextField.swift */; };
 		2DCFF0CE0BD295F1D46D3247F36B192C /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */; };
 		40039E0AF0D764360B1D4FC4F7950D2E /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		463FC22D62A252D86D39ED9A8A28CCAB /* SWOTPView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 483098920622084ED431EB7031A0E5DF /* SWOTPView-dummy.m */; };
@@ -18,7 +20,7 @@
 		6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */; };
 		760636043BCB55F61AF56784EF682E00 /* Pods-SWOTPView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1824A4D5E1D5DBDB557D85423727F12A /* Pods-SWOTPView_Tests-dummy.m */; };
 		7BE1839F7E13467D2458F048F591A27D /* SWOTPView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DF381D491BC89DC8A207AE2CA6BD0B2A /* SWOTPView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8252CBE0C90B9B11A718EFD097CEF84A /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC02669DA4289E65139813E7AD8E7E2F /* ReplaceMe.swift */; };
+		8252CBE0C90B9B11A718EFD097CEF84A /* OTPStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC02669DA4289E65139813E7AD8E7E2F /* OTPStackView.swift */; };
 		844C003A86BAD3C7ADDCA7AB8D6F8E57 /* Pods-SWOTPView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B337AA0FBD69907DF43AB7A7A279F746 /* Pods-SWOTPView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8568E142F643B8195A5950CDDA02FDCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
 		88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */; };
@@ -65,7 +67,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		001CB5157E9E8A5FDEC919DE2A32F67A /* Pods_SWOTPView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SWOTPView_Tests.framework; path = "Pods-SWOTPView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		001CB5157E9E8A5FDEC919DE2A32F67A /* Pods_SWOTPView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWOTPView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		01579D2F35950BB89C8DAD2E5B5294A2 /* Pods-SWOTPView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SWOTPView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		0B8D904B2E1F418DDCB6380C2B746B74 /* SWOTPView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SWOTPView.release.xcconfig; sourceTree = "<group>"; };
 		0C37E49E3CBC1BDD21716827817C83B7 /* SWOTPView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SWOTPView.modulemap; sourceTree = "<group>"; };
@@ -73,6 +75,8 @@
 		0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
 		1122F6A0CECAB40EEE8AE53CF696C449 /* Pods-SWOTPView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SWOTPView_Example-umbrella.h"; sourceTree = "<group>"; };
 		1824A4D5E1D5DBDB557D85423727F12A /* Pods-SWOTPView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SWOTPView_Tests-dummy.m"; sourceTree = "<group>"; };
+		1825DA57247528D0007B1991 /* OTPView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OTPView.swift; path = SWOTPView/Classes/OTPView.swift; sourceTree = "<group>"; };
+		187C61E22474DAA200827E7D /* OTPTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OTPTextField.swift; path = SWOTPView/Classes/OTPTextField.swift; sourceTree = "<group>"; };
 		1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
 		235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
 		277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
@@ -83,18 +87,18 @@
 		4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
 		483098920622084ED431EB7031A0E5DF /* SWOTPView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SWOTPView-dummy.m"; sourceTree = "<group>"; };
 		4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
-		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E601BD54DA9BF4071437E60125281FA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		6262BD642756E8F438D9001D7E2D72E5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		6262BD642756E8F438D9001D7E2D72E5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		64A00E4616ADC4E0084B1A6A3D106CD0 /* Pods-SWOTPView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SWOTPView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
-		66F599C468111751C7461535B4A9620F /* SWOTPView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SWOTPView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		66F599C468111751C7461535B4A9620F /* SWOTPView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SWOTPView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
 		716A9972B9D9103B54DB950893FAF104 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
 		88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
-		88C61FF3E2C6DEF82B0B9EE0CB5986E5 /* Pods_SWOTPView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SWOTPView_Example.framework; path = "Pods-SWOTPView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88C61FF3E2C6DEF82B0B9EE0CB5986E5 /* Pods_SWOTPView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWOTPView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B71B46625735A2933DD9E154B7F31D0 /* Pods-SWOTPView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SWOTPView_Tests-Info.plist"; sourceTree = "<group>"; };
 		8CAA89EEF1039078430D7A886477E365 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
@@ -102,25 +106,25 @@
 		9468E867498BBAF36F9AFFE4845F8B09 /* FBSnapshotTestCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.debug.xcconfig; sourceTree = "<group>"; };
 		96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
 		99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
 		B337AA0FBD69907DF43AB7A7A279F746 /* Pods-SWOTPView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SWOTPView_Tests-umbrella.h"; sourceTree = "<group>"; };
 		B7103CA00AED20722C5B69CA5B4F6938 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
 		B76A88705B41A9B0F15C15509D2C1217 /* Pods-SWOTPView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SWOTPView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B8BE962C6FF7719CC792148641C416D5 /* Pods-SWOTPView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SWOTPView_Example-dummy.m"; sourceTree = "<group>"; };
 		C05A992EAA78DC79E0919852960E69D7 /* SWOTPView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SWOTPView-Info.plist"; sourceTree = "<group>"; };
-		C73B63D5ADFD4E6C21E5C45AC6262A9B /* SWOTPView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SWOTPView.framework; path = SWOTPView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C73B63D5ADFD4E6C21E5C45AC6262A9B /* SWOTPView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SWOTPView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7B241074433275ADBEFDC1A5CFAC055 /* Pods-SWOTPView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SWOTPView_Example-frameworks.sh"; sourceTree = "<group>"; };
 		C9783F7ABDB9E2C05D5C6BE6574B394E /* Pods-SWOTPView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SWOTPView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		CBFF6C5FD9C3A84274A9314D3E940B6E /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
-		CC02669DA4289E65139813E7AD8E7E2F /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = SWOTPView/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		CC02669DA4289E65139813E7AD8E7E2F /* OTPStackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OTPStackView.swift; path = SWOTPView/Classes/OTPStackView.swift; sourceTree = "<group>"; };
 		D08CEBB9BDD9EF7A662ECFC0305C169E /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
 		D2C4BF3C7D3603DD8CE75E3671230469 /* SWOTPView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWOTPView-prefix.pch"; sourceTree = "<group>"; };
 		D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
 		DF381D491BC89DC8A207AE2CA6BD0B2A /* SWOTPView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWOTPView-umbrella.h"; sourceTree = "<group>"; };
 		E121F07841A6EBE2D8044B39186D6B0D /* Pods-SWOTPView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SWOTPView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E279AEDE451EA7AB9988418BD7CE6969 /* Pods-SWOTPView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SWOTPView_Tests.modulemap"; sourceTree = "<group>"; };
-		E611920B7A96F1A2F5D24E5446C51118 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		E611920B7A96F1A2F5D24E5446C51118 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		EBD054BB920AF11D40A5DE039BFF3134 /* Pods-SWOTPView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SWOTPView_Example.modulemap"; sourceTree = "<group>"; };
 		EF93AB0527D3AF68E4DD85A17DABBAC8 /* Pods-SWOTPView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SWOTPView_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		FE8431D2AE218BA550B56D5BF60053D0 /* Pods-SWOTPView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SWOTPView_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -257,7 +261,9 @@
 		7725C611BDBC91E4EACE570FD7C3C143 /* SWOTPView */ = {
 			isa = PBXGroup;
 			children = (
-				CC02669DA4289E65139813E7AD8E7E2F /* ReplaceMe.swift */,
+				1825DA57247528D0007B1991 /* OTPView.swift */,
+				187C61E22474DAA200827E7D /* OTPTextField.swift */,
+				CC02669DA4289E65139813E7AD8E7E2F /* OTPStackView.swift */,
 				5C1AEFE8C5B387DDCC7B505029595FE5 /* Pod */,
 				06B6A70493EE124F168B4DB8A93865FD /* Support Files */,
 			);
@@ -325,7 +331,6 @@
 				B69B2ECE2D2C9A3924A9231138CE0BBC /* Support Files */,
 				906402ECC4C6C5EB58DD365FD2C64E92 /* SwiftSupport */,
 			);
-			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
@@ -568,8 +573,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8252CBE0C90B9B11A718EFD097CEF84A /* ReplaceMe.swift in Sources */,
+				8252CBE0C90B9B11A718EFD097CEF84A /* OTPStackView.swift in Sources */,
 				463FC22D62A252D86D39ED9A8A28CCAB /* SWOTPView-dummy.m in Sources */,
+				1825DA59247528D3007B1991 /* OTPView.swift in Sources */,
+				187C61E42474DC4000827E7D /* OTPTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -787,8 +794,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
